@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+
+data/raw/
+data/parquet/
+
+results/csv/
+results/plots/
+
+.vscode/
+.idea/

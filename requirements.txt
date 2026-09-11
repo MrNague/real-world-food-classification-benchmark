@@ -1,0 +1,7 @@
+torch
+torchvision
+minimal-dataset-pytorch
+pandas
+matplotlib
+psutil
+tqdm
