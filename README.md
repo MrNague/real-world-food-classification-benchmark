@@ -250,5 +250,5 @@ The exact cause of the custom DataLoader's scaling plateau on Food-101 has not b
 
 **Pascal Nague**
 
-Bachelor Project — DFKI
+Bachelor Project complement — DFKI
 Summer Semester 2026
