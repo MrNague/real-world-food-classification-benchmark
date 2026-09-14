@@ -1,0 +1,5 @@
+Job 3395235: Running on node(s) serv-3338
+Job 3395235: Started at 2026-09-14 11:01:10+0200
+Monitor this job here: http://monitoring.pegasus.kl.dfki.de/d/slurm-job-details/job-details?var-jobid=3395235&from=1789376470000
+Killed
+[2026-09-14T11:01:49.331] error: Detected 1 oom_kill event in StepId=3395235.batch. Some of the step tasks have been OOM Killed.

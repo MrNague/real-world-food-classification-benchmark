@@ -1,0 +1,23 @@
+Job 3396470: Running on node(s) serv-3338
+Job 3396470: Started at 2026-09-14 11:05:07+0200
+Monitor this job here: http://monitoring.pegasus.kl.dfki.de/d/slurm-job-details/job-details?var-jobid=3396470&from=1789376707000
+Dataset: tiny
+Path: /fscratch/nague/storage_benchmarks/images.parquet
+Image size: (64, 64)
+Samples measured: 5000
+
+Loading ParquetDataset...
+Dataset loaded in 79.835 s
+Dataset length exposed: 5000
+
+Warm-up...
+Benchmarking __getitem__...
+
+============================================================
+RESULT
+============================================================
+Dataset: tiny
+Load time: 79.835 s
+Processing time: 9.395 s
+Throughput: 532.2 samples/s
+Mean sample time: 1.879 ms

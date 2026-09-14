@@ -1,0 +1,103 @@
+Job 3395164: Running on node(s) serv-3338
+Job 3395164: Started at 2026-09-14 10:48:38+0200
+Monitor this job here: http://monitoring.pegasus.kl.dfki.de/d/slurm-job-details/job-details?var-jobid=3395164&from=1789375718000
+Loading Parquet dataset...
+Dataset: 10,000 samples
+Batch size: 256
+Image size: (64, 64)
+
+============================================================
+Workers: 1
+============================================================
+
+Minimal Dataset DataLoader
+  repeat 1: 788.1 samples/s (12.67s)
+  repeat 2: 793.4 samples/s (12.58s)
+  repeat 3: 796.1 samples/s (12.54s)
+
+PyTorch DataLoader
+  repeat 1: 837.2 samples/s (11.93s)
+  repeat 2: 836.1 samples/s (11.94s)
+  repeat 3: 839.3 samples/s (11.90s)
+
+============================================================
+Workers: 2
+============================================================
+
+Minimal Dataset DataLoader
+  repeat 1: 1427.0 samples/s (7.00s)
+  repeat 2: 1434.7 samples/s (6.96s)
+  repeat 3: 1433.7 samples/s (6.96s)
+
+PyTorch DataLoader
+  repeat 1: 1607.1 samples/s (6.21s)
+  repeat 2: 1621.7 samples/s (6.16s)
+  repeat 3: 1595.1 samples/s (6.26s)
+
+============================================================
+Workers: 4
+============================================================
+
+Minimal Dataset DataLoader
+  repeat 1: 2343.6 samples/s (4.26s)
+  repeat 2: 2348.9 samples/s (4.25s)
+  repeat 3: 2326.2 samples/s (4.29s)
+
+PyTorch DataLoader
+  repeat 1: 3082.4 samples/s (3.24s)
+  repeat 2: 3074.5 samples/s (3.25s)
+  repeat 3: 2972.7 samples/s (3.36s)
+
+============================================================
+Workers: 8
+============================================================
+
+Minimal Dataset DataLoader
+  repeat 1: 2961.0 samples/s (3.37s)
+  repeat 2: 2996.2 samples/s (3.33s)
+  repeat 3: 2968.6 samples/s (3.36s)
+
+PyTorch DataLoader
+  repeat 1: 5376.6 samples/s (1.86s)
+  repeat 2: 5294.6 samples/s (1.89s)
+  repeat 3: 5273.9 samples/s (1.89s)
+
+============================================================
+Workers: 16
+============================================================
+
+Minimal Dataset DataLoader
+  repeat 1: 2979.0 samples/s (3.35s)
+  repeat 2: 2981.3 samples/s (3.35s)
+  repeat 3: 3008.0 samples/s (3.32s)
+
+PyTorch DataLoader
+  repeat 1: 6288.8 samples/s (1.59s)
+  repeat 2: 5889.1 samples/s (1.70s)
+  repeat 3: 6361.5 samples/s (1.57s)
+
+============================================================
+Workers: 32
+============================================================
+
+Minimal Dataset DataLoader
+  repeat 1: 2995.1 samples/s (3.33s)
+  repeat 2: 2993.7 samples/s (3.34s)
+  repeat 3: 2975.1 samples/s (3.36s)
+
+PyTorch DataLoader
+  repeat 1: 5083.9 samples/s (1.96s)
+  repeat 2: 5138.7 samples/s (1.94s)
+  repeat 3: 5111.9 samples/s (1.95s)
+
+
+========================================================================
+FINAL RESULTS
+========================================================================
+Workers                PyTorch     Minimal Dataset        Speedup
+1                     837.5 s/s            792.6 s/s          0.95x
+2                    1608.0 s/s           1431.8 s/s          0.89x
+4                    3043.2 s/s           2339.6 s/s          0.77x
+8                    5315.0 s/s           2975.3 s/s          0.56x
+16                   6179.8 s/s           2989.4 s/s          0.48x
+32                   5111.5 s/s           2988.0 s/s          0.58x

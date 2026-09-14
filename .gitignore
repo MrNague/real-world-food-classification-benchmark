@@ -1,12 +1,17 @@
+# Python
 .venv/
+venv/
 __pycache__/
 *.pyc
+*.pyo
 
-data/raw/
-data/parquet/
+# Dataset storage / local scratch link
+/data
 
-results/csv/
-results/plots/
-
+# IDE
 .vscode/
 .idea/
+
+# Temporary files
+*.swp
+*~

@@ -21,10 +21,10 @@ PARQUET_FILE = (
 )
 
 NUM_SAMPLES = 10_000
-BATCH_SIZE = 64
+BATCH_SIZE = 256
 WORKERS = [1, 2, 4, 8, 16, 32]
 REPEATS = 3
-IMAGE_SIZE = (224, 224)
+IMAGE_SIZE = (64, 64)
 
 
 def collate_batch(samples):

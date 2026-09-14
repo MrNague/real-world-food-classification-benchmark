@@ -3,6 +3,13 @@ import time
 import statistics
 
 import torch
+
+torch.set_num_threads(1)
+
+try:
+    torch.set_num_interop_threads(1)
+except RuntimeError:
+    pass
 from torch.utils.data import DataLoader as TorchDataLoader
 
 from minimal_dataset import (
@@ -24,7 +31,7 @@ NUM_SAMPLES = 10_000
 BATCH_SIZE = 64
 WORKERS = [1, 2, 4, 8, 16, 32]
 REPEATS = 3
-IMAGE_SIZE = (224, 224)
+IMAGE_SIZE = (64, 64)
 
 
 def collate_batch(samples):

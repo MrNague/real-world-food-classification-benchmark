@@ -1,0 +1,31 @@
+Job 3396472: Running on node(s) serv-3338
+Job 3396472: Started at 2026-09-14 11:05:17+0200
+Monitor this job here: http://monitoring.pegasus.kl.dfki.de/d/slurm-job-details/job-details?var-jobid=3396472&from=1789376717000
+Dataset: food
+Path: data/parquet/food101_train_10k.parquet
+Image size: (64, 64)
+Samples measured: 5000
+
+Loading ParquetDataset...
+Traceback (most recent call last):
+  File "/home/nague/real-world-food-classification-benchmark/src/compare_dataset_cost.py", line 84, in <module>
+    main()
+  File "/home/nague/real-world-food-classification-benchmark/src/compare_dataset_cost.py", line 44, in main
+    dataset = ParquetDataset(
+              ^^^^^^^^^^^^^^^
+  File "/home/nague/real-world-food-classification-benchmark/.venv/lib/python3.12/site-packages/minimal_dataset/parquet_dataset.py", line 44, in __init__
+    self._table = pq.read_table(
+                  ^^^^^^^^^^^^^^
+  File "/home/nague/real-world-food-classification-benchmark/.venv/lib/python3.12/site-packages/pyarrow/parquet/core.py", line 1896, in read_table
+    dataset = ParquetDataset(
+              ^^^^^^^^^^^^^^^
+  File "/home/nague/real-world-food-classification-benchmark/.venv/lib/python3.12/site-packages/pyarrow/parquet/core.py", line 1448, in __init__
+    filesystem, path_or_paths = _resolve_filesystem_and_path(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nague/real-world-food-classification-benchmark/.venv/lib/python3.12/site-packages/pyarrow/fs.py", line 163, in _resolve_filesystem_and_path
+    file_info = filesystem.get_file_info(path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/_fs.pyx", line 616, in pyarrow._fs.FileSystem.get_file_info
+  File "pyarrow/error.pxi", line 155, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+OSError: [Errno 70] Failed stat()ing path 'data/parquet/food101_train_10k.parquet'. Detail: [errno 70] Communication error on send

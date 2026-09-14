@@ -1,0 +1,4 @@
+Job 3389057: Running on node(s) serv-3337
+Job 3389057: Started at 2026-09-12 20:58:37+0200
+Monitor this job here: http://monitoring.pegasus.kl.dfki.de/d/slurm-job-details/job-details?var-jobid=3389057&from=1789239517000
+.venv/bin/python: can't open file '/home/nague/real-world-food-classification-benchmark/src/benchmark_64.py': [Errno 2] No such file or directory
